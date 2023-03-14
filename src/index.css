@@ -6,10 +6,11 @@
   --color-bg-tertiary: #e6f7ff;
   --color-bg-quartenary: #f5f5f5;
 
-  --color-font-primary: #262626;
+  --color-font-primary: #000000;
   --color-font-secondary: #ffffff;
-  --color-font-tertiary: #1890ff;
-  --color-font-quartenary: #737373;
+  --color-font-tertiary: #7e7e7e;
+  --color-font-quartenary: #262626;
+  --color-font-quinary: #737373;
 }
 
 * {

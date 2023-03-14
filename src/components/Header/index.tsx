@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="container">
-        <Link to="#" className="custom-brand">
+        <Link to="/" className="custom-brand">
           Github API
         </Link>
       </div>
