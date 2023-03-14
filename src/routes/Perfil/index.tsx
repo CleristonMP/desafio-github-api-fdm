@@ -31,7 +31,6 @@ export default function Perfil() {
       })
       .catch((error) => {
         setGithubUser(undefined);
-        console.log(error);
       });
   };
 
