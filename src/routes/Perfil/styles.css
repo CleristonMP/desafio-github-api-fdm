@@ -7,7 +7,7 @@
 }
 
 .search-area-ctr h1 {
-  font-size: 22px;
+  font-size: 1.25em;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -38,6 +38,12 @@
   cursor: pointer;
 }
 
+.error-msg {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
 @media (min-width: 576px) {
   .search-area-ctr h1 {
     font-size: 28px;
@@ -45,6 +51,10 @@
 
   .search-form input {
     width: 70%;
+  }
+
+  .error-msg {
+    font-size: 1.75em;
   }
 }
 
@@ -56,6 +66,10 @@
   .search-form input {
     width: 55%;
   }
+
+  .error-msg {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -65,6 +79,10 @@
 
   .search-form input {
     width: 45%;
+  }
+
+  .error-msg {
+    font-size: 38px;
   }
 }
 

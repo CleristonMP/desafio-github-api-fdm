@@ -54,7 +54,7 @@ export default function Perfil() {
         </form>
       </div>
       <div>
-        {githubUser && <ResultCard githubUser={githubUser} />}
+        {githubUser ? <ResultCard githubUser={githubUser} /> : <h4 className="error-msg">Erro ao buscar usuário</h4>}
       </div>
     </main>
   );

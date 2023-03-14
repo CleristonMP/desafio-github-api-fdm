@@ -29,6 +29,10 @@ body {
   background-color: var(--color-bg-primary);
 }
 
+main {
+    padding: 10px;
+}
+
 a,
 a:hover {
   text-decoration: none;
