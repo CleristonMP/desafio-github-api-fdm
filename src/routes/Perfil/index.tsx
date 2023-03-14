@@ -10,6 +10,7 @@ type FormData = {
 
 export default function Perfil() {
   const [githubUser, setGithubUser] = useState<GithubUser>();
+  const [notFound, setNotFound] = useState(false);
 
   const [formData, setFormData] = useState<FormData>({
     githubUser: "",
@@ -30,7 +31,7 @@ export default function Perfil() {
         setGithubUser(response.data);
       })
       .catch((error) => {
-        setGithubUser(undefined);
+        setNotFound(true);
       });
   };
 
@@ -48,13 +49,17 @@ export default function Perfil() {
             aria-describedby="Campo de Busca de Usuário do Github"
             onChange={handleChange}
           />
-          <button type="submit">
-            Encontrar
-          </button>
+          <button type="submit">Encontrar</button>
         </form>
       </div>
       <div>
-        {githubUser ? <ResultCard githubUser={githubUser} /> : <h4 className="error-msg">Erro ao buscar usuário</h4>}
+        {githubUser ? (
+          <ResultCard githubUser={githubUser} />
+        ) : (
+          notFound ?
+          <h4 className="error-msg">Erro ao buscar usuário</h4>
+          : <></>
+        )}
       </div>
     </main>
   );
